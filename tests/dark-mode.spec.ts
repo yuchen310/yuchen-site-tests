@@ -24,7 +24,7 @@ function toggle(page: Page) {
 }
 
 test('SPEC.md:10 - a button in the nav toggles a dark class on <body>', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await expect(toggle(page), 'expected exactly one button in <nav>').toHaveCount(1);
 
   const start = await isDark(page);
@@ -36,7 +36,7 @@ test('SPEC.md:10 - a button in the nav toggles a dark class on <body>', async ({
 
 // "Kept for the session" is read as: survives a reload in the same tab.
 test('SPEC.md:11 - the dark-mode choice is kept for the session', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   const start = await isDark(page);
 
   await toggle(page).click();
