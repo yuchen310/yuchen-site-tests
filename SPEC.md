@@ -9,3 +9,7 @@
 ## Issue #1: dark-mode toggle
 - A button in the nav toggles a 'dark' class on <body>.
 - The choice is kept for the session.
+
+## Issue #4: back-to-top button
+- A back-to-top button appears once the user has scrolled past the hero section.
+- The button is hidden at the top of the page, appears after scrolling past #hero, and clicking it returns the page to the top.
